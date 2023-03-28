@@ -1,6 +1,5 @@
 import * as actionTypes from './actionTypes';
 
-// Add the new action creators here
 export const fetchBucket = (bucketId) => async (dispatch) => {
   const response = await fetch(`/api/buckets/${bucketId}`);
   const data = await response.json();
