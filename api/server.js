@@ -9,6 +9,7 @@ server.use(cors());
 server.use(router);
 
 module.exports = (req, res) => {
+  console.log('Handling request:', req.url);
   const handler = server(req, res);
   return handler;
 };
