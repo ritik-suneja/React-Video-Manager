@@ -1,0 +1,3 @@
+[build]
+  command = "npm run build && json-server --watch db.json --port 5001"
+  publish = "build"
