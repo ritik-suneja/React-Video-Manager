@@ -134,7 +134,7 @@ export default function Bucket() {
     };
 
     try {
-      const response = await fetch('/api/history', requestOptions);
+      const response = await fetch('/api/server.js/history', requestOptions);
       if (!response.ok) {
         throw new Error('Failed to save history');
       }

@@ -9,7 +9,7 @@ function History() {
   }, []);
 
   const fetchHistory = async () => {
-    const response = await fetch('/api/history');
+    const response = await fetch('/api/server.js/history');
     const data = await response.json();
     setHistoryData(data);
   };
