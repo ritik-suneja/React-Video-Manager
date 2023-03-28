@@ -22,7 +22,7 @@ function BucketsList() {
         name: bucketName,
       };
 
-      await fetch('/api/server.js/buckets', {
+      await fetch('/api/buckets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
