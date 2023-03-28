@@ -1,0 +1,116 @@
+{
+  "buckets": [
+    {
+      "id": "1",
+      "name": "Entertainment Videos"
+    },
+    {
+      "id": "2",
+      "name": "Educational Videos"
+    },
+    {
+      "id": "1679951686240",
+      "name": "1234"
+    },
+    {
+      "id": "1679952856998",
+      "name": "123"
+    },
+    {
+      "id": "1679953190726",
+      "name": "1234"
+    },
+    {
+      "id": "1679983066445",
+      "name": "1234"
+    },
+    {
+      "id": "1679985244017",
+      "name": "1234"
+    },
+    {
+      "id": "1679986008732",
+      "name": "1234"
+    },
+    {
+      "id": "1679987852436",
+      "name": "123456"
+    }
+  ],
+  "cards": [
+    {
+      "id": "2",
+      "name": "Sample Educational Video",
+      "url": "https://www.youtube.com/embed/another-sample-video-id",
+      "bucketId": "2"
+    },
+    {
+      "id": "1679951723238",
+      "name": "1234",
+      "url": "https://www.youtube.com/embed/vVhPSgLITUQ",
+      "bucketId": "1679951686240"
+    },
+    {
+      "id": "1679951798895",
+      "name": "123",
+      "url": "https://www.youtube.com/embed/WcIcVapfqXw",
+      "bucketId": "1679951686240"
+    },
+    {
+      "id": "1679953201995",
+      "name": "12",
+      "url": "12345",
+      "bucketId": "1679953190726"
+    },
+    {
+      "id": "1679990056098",
+      "name": "123123",
+      "url": "123123",
+      "bucketId": "2"
+    }
+  ],
+  "history": [
+    {
+      "name": "1234",
+      "url": "https://www.youtube.com/embed/vVhPSgLITUQ",
+      "timePlayed": "2023-03-27T21:48:13.148Z",
+      "id": 1
+    },
+    {
+      "name": "123",
+      "url": "https://www.youtube.com/embed/WcIcVapfqXw",
+      "timePlayed": "2023-03-28T05:58:06.240Z",
+      "id": 2
+    },
+    {
+      "name": "123",
+      "url": "https://www.youtube.com/embed/WcIcVapfqXw",
+      "timePlayed": "2023-03-28T07:27:33.543Z",
+      "id": 3
+    },
+    {
+      "name": "123",
+      "url": "https://www.youtube.com/embed/WcIcVapfqXw",
+      "timePlayed": "2023-03-28T07:53:07.046Z",
+      "id": 4
+    },
+    {
+      "name": "123123",
+      "url": "123123",
+      "timePlayed": "2023-03-28T07:54:38.807Z",
+      "id": 5
+    },
+    {
+      "name": "123123",
+      "url": "123123",
+      "timePlayed": "2023-03-28T07:54:50.772Z",
+      "id": 6
+    },
+    {
+      "name": "1234",
+      "url": "https://www.youtube.com/embed/vVhPSgLITUQ",
+      "timePlayed": "2023-03-28T07:55:04.833Z",
+      "id": 7
+    }
+  ]
+}

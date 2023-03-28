@@ -1,0 +1,7 @@
+export const FETCH_BUCKET = 'FETCH_BUCKET';
+export const FETCH_CARDS = 'FETCH_CARDS';
+export const FETCH_BUCKETS = 'FETCH_BUCKETS';
+export const ADD_CARD = 'ADD_CARD';
+export const DELETE_CARD = 'DELETE_CARD';
+export const UPDATE_CARD = 'UPDATE_CARD';
+export const DELETE_MULTIPLE_CARDS = 'DELETE_MULTIPLE_CARDS';
