@@ -2,19 +2,19 @@ import * as actionTypes from './actionTypes';
 
 // Add the new action creators here
 export const fetchBucket = (bucketId) => async (dispatch) => {
-  const response = await fetch(`http://localhost:5001/buckets/${bucketId}`);
+  const response = await fetch(`/api/buckets/${bucketId}`);
   const data = await response.json();
   dispatch({ type: actionTypes.FETCH_BUCKET, payload: data });
 };
 
 export const fetchCards = (bucketId) => async (dispatch) => {
-  const response = await fetch(`http://localhost:5001/cards?bucketId=${bucketId}`);
+  const response = await fetch(`/api/cards?bucketId=${bucketId}`);
   const data = await response.json();
   dispatch({ type: actionTypes.FETCH_CARDS, payload: data });
 };
 
 export const fetchBuckets = () => async (dispatch) => {
-  const response = await fetch('http://localhost:5001/buckets');
+  const response = await fetch('/api/buckets');
   const data = await response.json();
   dispatch({ type: actionTypes.FETCH_BUCKETS, payload: data });
 };
@@ -27,7 +27,7 @@ export const addCard = (name, url, bucketId) => async (dispatch) => {
     bucketId,
   };
 
-  await fetch('http://localhost:5001/cards', {
+  await fetch('/api/cards', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -39,7 +39,7 @@ export const addCard = (name, url, bucketId) => async (dispatch) => {
 };
 
 export const deleteCard = (cardId) => async (dispatch) => {
-  await fetch(`http://localhost:5001/cards/${cardId}`, {
+  await fetch(`/api/cards/${cardId}`, {
     method: 'DELETE',
   });
 
@@ -47,7 +47,7 @@ export const deleteCard = (cardId) => async (dispatch) => {
 };
 
 export const updateCard = (card) => async (dispatch) => {
-  await fetch(`http://localhost:5001/cards/${card.id}`, {
+  await fetch(`/api/cards/${card.id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
@@ -61,7 +61,7 @@ export const updateCard = (card) => async (dispatch) => {
 export const deleteMultipleCards = (cardIds) => async (dispatch) => {
   await Promise.all(
     cardIds.map((cardId) =>
-      fetch(`http://localhost:5001/cards/${cardId}`, {
+      fetch(`/api/cards/${cardId}`, {
         method: 'DELETE',
       })
     )

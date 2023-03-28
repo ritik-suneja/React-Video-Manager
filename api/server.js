@@ -5,10 +5,10 @@ const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
-server.use(cors()); // Use CORS middleware
+server.use(cors());
 server.use(router);
 
-const port = 5001;
-server.listen(port, () => {
-  console.log(`JSON Server is running on port ${port}`);
-});
+module.exports = (req, res) => {
+  const handler = server(req, res);
+  return handler;
+};
