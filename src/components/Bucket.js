@@ -134,7 +134,7 @@ export default function Bucket() {
     };
 
     try {
-      const response = await fetch('/api/history', requestOptions);
+      const response = await fetch('https://universal-pouncing-sombrero.glitch.me/history', requestOptions);
       if (!response.ok) {
         throw new Error('Failed to save history');
       }

@@ -22,7 +22,7 @@ function BucketsList() {
         name: bucketName,
       };
 
-      await fetch('/api/buckets', {
+      await fetch('https://universal-pouncing-sombrero.glitch.me/buckets', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
